@@ -1,9 +1,9 @@
-import TestCards from "./TestCards"
+import CardsWrap from "./CardsWrap"
 
 const Body = () => {
   return (
     <div className="bodyPosition">
-      <TestCards />
+      <CardsWrap />
     </div>
   )
 }
