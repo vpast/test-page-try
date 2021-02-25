@@ -2,6 +2,7 @@ import {useRouter} from 'next/router'
 import {getTestQuestions} from "../../data/questions"
 import Question from "../../components/Question"
 import {useState} from "react"
+import Layout from '../../components/Layout'
 
 const TestPage = () => {
   const router = useRouter();
@@ -13,11 +14,10 @@ const TestPage = () => {
   const question = questions[activeIndex]
 
   return (
-    <div className="container">
+    <Layout>
       <h1>Test {title}</h1>
       {!!question && <Question data={question} />}
-      {console.log(test_id)}
-    </div>
+    </Layout>
   )
 }
 

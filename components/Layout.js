@@ -3,7 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Body from "./Body"
 
-const Layout = ()=>{
+const Layout = (props)=>{
   return (
     <div className="container">
       <Head>
@@ -12,7 +12,9 @@ const Layout = ()=>{
         <title>Test Page</title>
       </Head>
       <Header />
-      <Body />
+      <Body>
+        {props.children}
+      </Body>
       <Footer />
     </div>
   )

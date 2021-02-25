@@ -7,7 +7,7 @@ export const questions = [
       {text: "4"},
       {text: "5"}
     ],
-    answer: 2
+    answer: 1
   },
   {
     test_id: 2,
@@ -17,7 +17,7 @@ export const questions = [
       {text: "1"},
       {text: "2"}
     ],
-    answer: 1
+    answer: 0
   },
   {
     test_id: 3,
@@ -27,7 +27,7 @@ export const questions = [
       {text: "-2"},
       {text: "2"}
     ],
-    answer: 2
+    answer: 1
   },
   {
     test_id: 4,
@@ -37,7 +37,7 @@ export const questions = [
       {text: "9"},
       {text: "5"}
     ],
-    answer: 1
+    answer: 0
   },
   {
     test_id: 5,
@@ -47,7 +47,7 @@ export const questions = [
       {text: "2"},
       {text: "0"}
     ],
-    answer: 1
+    answer: 0
   },
   {
     test_id: 6,
@@ -57,7 +57,7 @@ export const questions = [
       {text: "100"},
       {text: "20"}
     ],
-    answer: 3
+    answer: 2
   }
 ]
 

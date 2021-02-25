@@ -1,10 +1,11 @@
-// Нужен ли index.js? Или его можно было назвать TestChoose.js?
-
+import CardsWrap from "../components/CardsWrap"
 import Layout from "../components/Layout"
 
 const IndexPage = () => {
   return (
-    <Layout />
+    <Layout>
+      <CardsWrap />
+    </Layout>
   )
 }
 

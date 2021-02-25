@@ -1,9 +1,7 @@
-import CardsWrap from "./CardsWrap"
-
-const Body = () => {
+const Body = (props) => {
   return (
     <div className="bodyPosition">
-      <CardsWrap />
+      {props.children}
     </div>
   )
 }
