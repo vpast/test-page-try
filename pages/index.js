@@ -1,4 +1,3 @@
-import CardsWrap from "../components/CardsWrap"
 import DashboardLayout from "../components/examples/DashboardLayout"
 import TopNavBar from "../components/TopNavBar"
 import {navlinks} from "../data/navlinks"
@@ -9,7 +8,7 @@ const IndexPage = () => {
     <DashboardLayout>
       <TopNavBar navlinks={navlinks} />
       <SideBar />
-      <CardsWrap />
+      <h1>This is Home Page!</h1>
     </DashboardLayout>
   )
 }

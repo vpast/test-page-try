@@ -18,5 +18,9 @@ export const navlinks = [
   {
     link: "#",
     text: "Help"
+  },
+  {
+    link: "/tests",
+    text: "Tests"
   }
 ]

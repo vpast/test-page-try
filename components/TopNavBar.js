@@ -40,6 +40,11 @@ const TopNavBar = (props) => {
               {navlinks[4].text}
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href={navlinks[5].link}>
+              {navlinks[5].text}
+              </a>
+            </li>
           </ul>
           <form className="form-inline mt-2 mt-md-0">
             <input
