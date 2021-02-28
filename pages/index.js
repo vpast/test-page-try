@@ -1,11 +1,16 @@
 import CardsWrap from "../components/CardsWrap"
-import Layout from "../components/Layout"
+import DashboardLayout from "../components/examples/DashboardLayout"
+import TopNavBar from "../components/TopNavBar"
+import {navlinks} from "../data/navlinks"
+import SideBar from "../components/SideBar"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <DashboardLayout>
+      <TopNavBar navlinks={navlinks} />
+      <SideBar />
       <CardsWrap />
-    </Layout>
+    </DashboardLayout>
   )
 }
 
