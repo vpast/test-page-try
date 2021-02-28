@@ -2,7 +2,9 @@ import {useRouter} from 'next/router'
 import {getTestQuestions} from "../../data/questions"
 import Question from "../../components/Question"
 import {useState} from "react"
-import Layout from '../../components/Layout'
+import DashboardLayout from '../../components/examples/DashboardLayout'
+import TopNavBar from '../../components/TopNavBar'
+import SideBar from '../../components/SideBar'
 
 const TestPage = () => {
   const router = useRouter();
@@ -14,10 +16,12 @@ const TestPage = () => {
   const question = questions[activeIndex]
 
   return (
-    <Layout>
-      <h1>Test {title}</h1>
-      {!!question && <Question data={question} />}
-    </Layout>
+    <DashboardLayout>
+      <TopNavBar/>
+      <SideBar />
+        <h1>Test {title}</h1>
+        {!!question && <Question data={question} />}
+    </DashboardLayout>
   )
 }
 
