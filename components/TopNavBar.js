@@ -1,5 +1,5 @@
 const TopNavBar = (props) => {
-  const navlink = props.navlink
+  const navlinks = props.navlinks;
 
   return (
     <div>
@@ -15,29 +15,29 @@ const TopNavBar = (props) => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <a className="navbar-brand" href="#">
-          {navlink.text}
+        <a className="navbar-brand" href={navlinks[0].link}>
+          {navlinks[0].text}
         </a>
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
+              <a className="nav-link" href={navlinks[1].link}>
+              {navlinks[1].text} <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Settings
+              <a className="nav-link" href={navlinks[2].link}>
+              {navlinks[2].text}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Profile
+              <a className="nav-link" href={navlinks[3].link}>
+              {navlinks[3].text}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Help
+              <a className="nav-link" href={navlinks[4].link}>
+              {navlinks[4].text}
               </a>
             </li>
           </ul>

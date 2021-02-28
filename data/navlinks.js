@@ -4,7 +4,7 @@ export const navlinks = [
     text: "Dashboard"
   },
   {
-    link: "#",
+    link: "/",
     text: "Home"
   },
   {
@@ -13,7 +13,7 @@ export const navlinks = [
   },
   {
     link: "#",
-    text: "Proifle"
+    text: "Profile"
   },
   {
     link: "#",

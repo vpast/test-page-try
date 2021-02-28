@@ -5,6 +5,7 @@ import {useState} from "react"
 import DashboardLayout from '../../components/examples/DashboardLayout'
 import TopNavBar from '../../components/TopNavBar'
 import SideBar from '../../components/SideBar'
+import {navlinks} from "../../data/navlinks"
 
 const TestPage = () => {
   const router = useRouter();
@@ -17,7 +18,7 @@ const TestPage = () => {
 
   return (
     <DashboardLayout>
-      <TopNavBar/>
+      <TopNavBar navlinks={navlinks} />
       <SideBar />
         <h1>Test {title}</h1>
         {!!question && <Question data={question} />}
