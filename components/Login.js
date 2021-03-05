@@ -9,12 +9,10 @@ const Login = () => {
       router.push('/');
     }}>
         <div>
-          <label>Login:</label>
-          <input type="text" id="login" name="login" />
+          <input type="text" id="login" placeholder="Login" />
         </div>
         <div>
-          <label>Password:</label>
-          <input type="text" id="password" name="password" />
+          <input type="text" id="password" placeholder="Password" />
         </div>
         <input type="submit" value="Login" className="btn btn-primary"/>
     </form>
