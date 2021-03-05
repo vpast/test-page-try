@@ -3,6 +3,7 @@ import TopNavBar from "../components/TopNavBar"
 import {navlinks} from "../data/navlinks"
 import SideBar from "../components/SideBar"
 
+
 const IndexPage = () => {
   return (
     <DashboardLayout>

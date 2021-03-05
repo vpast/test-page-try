@@ -22,5 +22,9 @@ export const navlinks = [
   {
     link: "/tests",
     text: "Tests"
+  },
+  {
+    link: "/login",
+    text: "Login"
   }
 ]
