@@ -6,6 +6,7 @@ import DashboardLayout from '../../components/examples/DashboardLayout'
 import TopNavBar from '../../components/TopNavBar'
 import SideBar from '../../components/SideBar'
 import {navlinks} from "../../data/navlinks"
+import TransitionButton from '../../components/ui/buttons/TransitionButton'
 
 const TestPage = () => {
   const router = useRouter();
@@ -16,12 +17,30 @@ const TestPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const question = questions[activeIndex]
 
+  const nextQuestion = () => {
+    if(activeIndex + 1 > questions.length - 1) {
+      return;
+    }
+    setActiveIndex(activeIndex + 1)
+  }
+
+  
+  const prevQuestion = () => {
+    if(activeIndex - 1 < 0) {
+      return;
+    }
+    setActiveIndex(activeIndex - 1)
+  }
+  
+  {console.log(questions[activeIndex])}
   return (
     <DashboardLayout>
       <TopNavBar navlinks={navlinks} />
       <SideBar />
         <h1>Test {title}</h1>
         {!!question && <Question data={question} />}
+        <TransitionButton onClick={prevQuestion} text="Prev" />
+        <TransitionButton onClick={nextQuestion} text="Next" />
     </DashboardLayout>
   )
 }

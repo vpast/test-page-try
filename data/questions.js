@@ -10,6 +10,16 @@ export const questions = [
     answer: 1
   },
   {
+    test_id: 1,
+    text: "HTML 33",
+    options: [
+      {text: "3"},
+      {text: "4"},
+      {text: "5"}
+    ],
+    answer: 1
+  },
+  {
     test_id: 2,
     text: "CSS 2-2",
     options: [
