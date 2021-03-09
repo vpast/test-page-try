@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Button from "./ui/buttons/Button"
+import Button from "../ui/buttons/Button"
 
 const Card = (props) => {
   const test = props.test;

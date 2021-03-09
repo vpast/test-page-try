@@ -1,5 +1,5 @@
 import Card from "./Card"
-import {tests} from "../data/tests"
+import {tests} from "../../data/tests"
 
 const CardsWrap = () => {
   return (
