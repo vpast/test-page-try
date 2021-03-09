@@ -1,9 +1,9 @@
-const ResultCard = (props) => {
-  const test = props.test;
+import { tests } from "../../data/tests"
+
+const ResultCard = () => {
   return (
     <fieldset>
-      <legend>Results {test.title} Test</legend>
-      {console.log(test.title)}
+      <legend>Results {tests.map((test, id) => <p key={id}>{test.title}</p>)} Test</legend>
     </fieldset>
   )
 }

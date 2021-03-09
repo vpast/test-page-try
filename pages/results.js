@@ -3,6 +3,7 @@ import ResultCard from "../components/cards/ResultCard"
 import SideBar from "../components/navbars/SideBar"
 import TopNavBar from "../components/navbars/TopNavBar"
 import {navlinks} from "../data/navlinks"
+import { tests } from "../data/tests"
 
 const ResultsPage = () => {
   return (

@@ -3,8 +3,8 @@ import {getTestQuestions} from "../../data/questions"
 import Question from "../../components/Question"
 import {useState} from "react"
 import DashboardLayout from '../../components/examples/DashboardLayout'
-import TopNavBar from '../../components/TopNavBar'
-import SideBar from '../../components/SideBar'
+import TopNavBar from '../../components/navbars/TopNavBar'
+import SideBar from '../../components/navbars/SideBar'
 import {navlinks} from "../../data/navlinks"
 import TransitionButton from '../../components/ui/buttons/TransitionButton'
 
