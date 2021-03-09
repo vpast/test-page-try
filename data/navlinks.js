@@ -26,9 +26,5 @@ export const navlinks = [
   {
     link: "/login",
     text: "Login"
-  },
-  {
-    link: "/results",
-    text: "Results"
   }
 ]

@@ -1,7 +1,7 @@
 import DashboardLayout from "../components/examples/DashboardLayout"
-import TopNavBar from "../components/TopNavBar"
+import TopNavBar from "../components/navbars/TopNavBar"
 import {navlinks} from "../data/navlinks"
-import SideBar from "../components/SideBar"
+import SideBar from "../components/navbars/SideBar"
 
 
 const IndexPage = () => {

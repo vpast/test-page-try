@@ -7,6 +7,7 @@ import TopNavBar from '../../components/navbars/TopNavBar'
 import SideBar from '../../components/navbars/SideBar'
 import {navlinks} from "../../data/navlinks"
 import TransitionButton from '../../components/ui/buttons/TransitionButton'
+import Button from "../../components/ui/buttons/Button"
 
 const TestPage = () => {
   const router = useRouter();
@@ -41,6 +42,7 @@ const TestPage = () => {
         {!!question && <Question data={question} />}
         <TransitionButton onClick={prevQuestion} text="Prev" />
         <TransitionButton onClick={nextQuestion} text="Next" />
+        <Button text="Result" url={`/tests/results/${test_id}`}/>
     </DashboardLayout>
   )
 }
